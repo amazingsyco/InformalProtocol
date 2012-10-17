@@ -1,0 +1,71 @@
+.post{
+	h1.title, .entry-content{
+		margin-left: 0px;
+		@media screen and (max-width: 800px){
+			margin-left: 0;
+		}
+	}
+	@media screen and (min-width: 800px){
+		h1.title{
+			font-size: 26px;
+		}
+		.entry-content{
+			font-size: 18px;
+		}
+	}
+	@media screen and (max-width: 800px){
+		h1.title{
+			font-size: 22px;
+		}
+		.entry-content{
+			font-size: 15px;
+		}
+	}
+	a{
+		color: $color-blue;
+	}
+	.entry-content{
+		line-height: 1.6em;
+		text-align: left;
+		p, figure{
+			margin-top: 2em;
+		}
+		p:first-child{
+			margin-top: 10px;
+		}
+	}
+	.meta{
+		line-height: 2;
+		font-size: 0.9em;
+		color: $color-gray02;
+		width: 100%;
+		margin-top: 20px;
+		@media screen and (max-width: 800px){
+			margin-top: 15px;
+			position: static;
+			width: auto;
+		}
+		a{
+			@include link-colors($color-gray02, $color-gray01);
+			@include transition(0.3s);
+		}
+		.date, .tags, .comments{
+			margin-right: 30px;
+			display: inline;
+			&:before{
+				color: $color-gray03;
+				font: 1.3em $font-icon;
+				line-height: 1.6em;
+				position: relative;
+				left: 0;
+			}
+			@media screen and (max-width: 800px){
+				@include inline-block;
+				margin-right: 30px;
+			}
+		}
+		.date:before{content: "\f073";}
+		.tags:before{content: "\f02c";}
+		.comments:before{content: "\f075";}
+	}
+}

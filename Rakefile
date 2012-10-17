@@ -4,10 +4,10 @@ require "stringex"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "user@domain.com"
+ssh_user       = "amazingsyco@stevestreza.com"
 ssh_port       = "22"
-document_root  = "~/website.com/"
-rsync_delete   = false
+document_root  = "~/informalprotocol.com/"
+rsync_delete   = true
 deploy_default = "rsync"
 
 # This will be configured for you when you run config_deploy
@@ -105,7 +105,7 @@ task :new_post, :title do |t, args|
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
-    post.puts "comments: true"
+    post.puts "comments: false"
     post.puts "categories: "
     post.puts "---"
   end
