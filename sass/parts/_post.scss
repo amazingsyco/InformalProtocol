@@ -1,4 +1,4 @@
-.post{
+.post, .prettyPlease{
 	h1.title, .entry-content{
 		margin-left: 0px;
 		@media screen and (max-width: 800px){
@@ -68,4 +68,10 @@
 		.tags:before{content: "\f02c";}
 		.comments:before{content: "\f075";}
 	}
+}
+
+.prettyPlease{
+	text-align: center;
+	opacity: 0.8;
+	margin-top: 1em;
 }
