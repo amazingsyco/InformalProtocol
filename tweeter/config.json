@@ -1,0 +1,28 @@
+{
+	"twitter": {
+		"consumer_key": "1QArX715kVPcH0hZhI9Q",
+		"consumer_secret": "ORi1U6JSXC0VKV6h19tBKcMER49AKUiM8iqrWcqN8E",
+		"informalproto": {
+			"access_token": "883793678-xkx8mbqjKZgT5CzdCDeRD1sbGtkFFAygPb37H6bU",
+			"access_token_secret": "XeaJH7UjFwSCALfXhNwu3JRUPot2DhkIS7l8NShqA"
+		},
+		"stevestreza": {
+			"access_token": "658643-MboZyFsmN7e0ohMg1TdBycdM4E7KW9rbJI1G3PZjo",
+			"access_token_secret": "eOeR7BPOwUIa5j46qxnepwMarnOCYOtJqXdiW41AQ"
+		},
+		"stevestrezadev": {
+			"access_token": "",
+			"access_token_secret": ""
+		}
+	},
+	"appdotnet": {
+		"client_id": "E2Qps4CvqZAw6JWHQtw6zrrCL6JJXkK3",
+		"client_secret": "VDQ9yaJSbMHbw5v6huC3Zrv9znBpaTrt",
+		"informalprotocol": {
+
+		},
+		"stevestreza": {
+
+		}
+	}
+}
