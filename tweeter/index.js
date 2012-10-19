@@ -18,6 +18,7 @@ function main(){
 		var title = feedItem.title;
 		var url = feedItem.link.replace("informalprotocol.com//", "informalprotocol.com/");
 		if(fs.existsSync("lasturl.txt") && fs.readFileSync("lasturl.txt") == url){
+			console.log("No tweet/post necessary for " + url + ", bailing");
 			process.exit();
 		}
 
