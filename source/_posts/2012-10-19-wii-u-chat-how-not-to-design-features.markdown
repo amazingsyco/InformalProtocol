@@ -14,4 +14,4 @@ When you design a feature into anything, some percentage of people will use it, 
 
 > Frankly, this kind of half-assed solution for a voice chat feature - voice chat, mind you, being an integral part of mutliplayer gaming for many - just increases our concern that Nintendo is still struggling to get online functionality right this time around.
 
-Inexplicably, Nintendo chose to add all kinds of barriers to this one solution - how to talk to your friends while playing games. I can't tell if this was done intentionally or as just a gaffe in design. Either way, what does it say of the rest of the Wii U?
+Inexplicably, Nintendo chose to add all kinds of barriers to this one solution - how to talk to your friends while playing games. I can't tell if this was done intentionally or as just a gaffe in design. Either way, what does it say of the rest of the Wii U? And what other features are going to suffer as a result of focusing on something they don't care so much about?
