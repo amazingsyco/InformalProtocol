@@ -25,13 +25,14 @@
 		color: $color-blue;
 	}
 	.entry-content{
+		padding-top: 10px;
 		line-height: 1.6em;
 		text-align: left;
-		p, figure{
-			margin-top: 2em;
+		p, figure, blockquote{
+			margin-top: 1.5em;
 		}
 		p:first-child{
-			margin-top: 10px;
+			margin-top: 0px;
 		}
 	}
 	.meta{

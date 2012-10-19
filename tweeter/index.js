@@ -1,53 +1,49 @@
 var util = require("util");
+var fs = require("fs");
 var async = require("async");
 var request = require("request");
 var qs = require("querystring");
 var prompt = require("prompt");
 
-var config = JSON.parse(require("fs").readFileSync("config.json"));
+var config = require("./lib/config");
+var twitter = require("./lib/twitter");
+var appdotnet = require("./lib/appdotnet");
 
 var FeedParser = require("feedparser");
 var parser = new FeedParser();
 
-function tweet(username, tweet, cb){
-	var url = "https://api.twitter.com/1.1/statuses/update.json";
-	var params = {
-		status: tweet
-	};
-	var oauth = {
-		consumer_key: config.twitter.consumer_key,
-		consumer_secret: config.twitter.consumer_secret,
-		token: config.twitter[username].access_token,
-		token_secret: config.twitter[username].access_token_secret
-	};
-
-	url += "?" + qs.stringify(params);
-	request.post({url: url, oauth: oauth}, function(e, r, body){
-		var json = JSON.parse(body);
-		cb(json);
-	});
-};
-
 function main(){
-	parser.parseUrl("http://informalprotocol.com/atom.xml", {}, function(err, response, feed){
+	parser.parseUrl("http://informalprotocol.com/atom.xml?d=" + (new Date().getTime()), {}, function(err, response, feed){
 		var feedItem = feed[0];
 		var title = feedItem.title;
 		var url = feedItem.link.replace("informalprotocol.com//", "informalprotocol.com/");
+		if(fs.existsSync("lasturl.txt") && fs.readFileSync("lasturl.txt") == url){
+			process.exit();
+		}
+
 		var post = "\u1F4DD " + title + " " + url;
 
 		async.parallel([
 			function postTweet(cb){
-				tweet("informalproto", post, function(body){
-					
+				twitter.tweet("informalproto", post, function(body){
+					twitter.retweet("stevestreza", body.id_str, function(body){
+						console.log("Tweeted and retweeted");
+						cb(null);
+					});				
 				});
 			},
 			function postToADN(cb){
-
+				appdotnet.post("informalprotocol", post, function(body){
+					appdotnet.repost("stevestreza", body.id, function(body){
+						console.log("Posted and reposted");
+						cb(null);
+					});
+				});
 			}
 		], function(err, result){
-
+			fs.writeFileSync("lasturl.txt", url);
+			process.exit();
 		});
-		console.log("\u1F4DD " + title + " " + url);
 	});
 }
 
@@ -83,7 +79,14 @@ function getTwitterToken(){
 }
 
 function getADNToken(){
-	var url = "https://alpha.app.net/oauth/authenticate?client_id=" + config.appdotnet.client_id + "&response_type=token&redirect_uri=" + encodeURIComponent("http://localhost:8000/") + "&scope=write_post";
+	var params = {
+		client_id: config.appdotnet.client_id,
+		response_type: "token",
+		redirect_uri: "http://informalprotocol.com/cb",
+		scope: "write_post"
+	};
+
+	var url = "https://alpha.app.net/oauth/authenticate?" + qs.stringify(params);
 	console.log("Request token URL: " + url);
 }
 
@@ -92,7 +95,20 @@ if(process.argv[2] == "twitter-auth"){
 }else if(process.argv[2] == "appdotnet-auth"){
 	getADNToken();
 }else if(process.argv[2] == "twitter-test-tweet"){
-	tweet("stevestreza", "@stevestrezadev \u1F4DD Test", function(){});
+	twitter.tweet("informalproto", "@stevestreza Test", function(body){
+		var tweetID = body.id_str;
+		twitter.retweet("stevestreza", tweetID, function(body){
+			console.log("Body: " + util.inspect(body));
+		});
+	});
+}else if(process.argv[2] == "adn-test-post"){
+	console.log("Appdotnet? " + util.inspect(appdotnet));
+	appdotnet.post("informalprotocol", "@stevestreza Test", function(body){
+		var postID = body.id;
+		appdotnet.repost("stevestreza", postID, function(body){
+			console.log("Body: " + util.inspect(body));
+		});
+	});
 }else{
 	main();
 }
