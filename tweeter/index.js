@@ -22,7 +22,7 @@ function main(){
 			process.exit();
 		}
 
-		var post = "\u1F4DD " + title + " " + url;
+		var post = "" + title + " " + url;
 
 		async.parallel([
 			function postTweet(cb){
