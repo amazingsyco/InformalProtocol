@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Apparchy"
+date: 2012-10-21 17:48
+comments: false
+categories: Projects
+---
+
+When Twitter's mobile apps were still Tweetie, they had a screen which let you change the API root. So if your API method is named `1/statuses/update.json`, you add that to the end of the API root, giving you a URL that looks like `https://api.twitter.com/1/statuses/update.json`. If you change it to `http://foo.com/bar/`, then the API's URL becomes `http://foo.com/bar/1/statuses/update.json`. You could use this if you were in a network where Twitter's API was blocked, but you had a proxy server which wasn't, you could still connect. Soon after, [WordPress](http://en.blog.wordpress.com/2009/12/12/twitter-api/) and [Tumblr](http://staff.tumblr.com/post/287703110/api) built versions of their API which supported the Twitter API, so you could use those services from within Tweetie. Then Twitter bought Tweetie and moved everyone to OAuth.
+
+A couple weeks ago, I noticed that this was still present in Twitter's official apps. I've been a big fan of [App.net](http://alpha.app.net/stevestreza) since it came out, whose API is different than Twitter's, but not terribly so. I thought it might be interesting to try to build an "API translator" which pulled the App.net streams and posts into the Twitter app. The team behind App.net had a hackathon this weekend, and I had my project.
+
+Today I shipped the first alpha of [Apparchy](https://apparchy.net/), which turns Twitter's official iOS apps into App.net clients. You sign up for a free account on apparchy.net, add your app.net account, and then log into the Twitter app with your Apparchy username and password. Then, the Twitter app will start loading data from app.net through the Apparchy API. You can view your stream, your mentions, your profile, your followers, and your friends, as well as post, reply, star, and repost. It's not entirely complete, and some parts of the app will have no data or return nothing, but the core experience is pretty good.
+
+Apparchy implements Twitter's OAuth security, and sends all data over HTTPS, so the process is as secure as any other call through Twitter. Apparchy doesn't touch the Twitter API at all, and so it's not bound by any of Twitter's terms of service, should they be applicable. The only way this will get shut down is if Twitter removes the ability to change the API root in an update to their app (which doesn't sound likely, from what I've heard).
+
+Apparchy is what is possible when you have open APIs like App.net's and standards for how to handle server communication. It took a lot of research and trial/error to get it to work, but it works very well. I had a blast building this, and hope that it can be used for a long time. If you have an App.net account, give it a try for free at [Apparchy.net](https://apparchy.net).
