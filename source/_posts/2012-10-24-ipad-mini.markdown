@@ -1,0 +1,112 @@
+---
+layout: post
+title: "iPad mini"
+date: 2012-10-24 01:20
+comments: false
+categories: Technology
+---
+
+The iPad mini is basically a small iPad 2. It has an upgraded camera, improved wireless, and a 15% higher density screen. But the screen is only as good as the original iPhone, and it's running the same 19-month-old A5 processor (which is no slouch, but is hardly state-of-the-art). This is the same chip used in the latest iPod touch, but has more pixels to drive. I wouldn't be surprised if, even with the non-Retina display, this device feels a little sluggish compared to an iPhone 5, or even a 4S.
+
+The mini certainly fills a need; the current iPad is too large to be truly portable, but is smaller than every notebook you can buy. The iPad has definitely been the dominant player in the 10-inch tablet market, but the 7-inch tablet market has been growing. The leading competition in the 7-inch tablet space is the Nexus 7 (which is a very capable tablet), which will probably end up in a respectable #2 place by the end of 2012 in the area of several million units. It makes sense that Apple would want to try to hold on to the top seat.
+
+The $329 base price point, however, is a strange and awkward place to start the lineup. Not only is this $130 more expensive than the Nexus 7, it misses the psychological barrier of getting under $300. This propagates through the upgraded models as well, and causing a weird staggering effect. In fact, adding in the iPad 2's and the iPad 4's price points, we get this pricing chart of 13 prices spread out over 14 models:
+
+<table>
+	<tr>
+		<th>Price</th>
+		<th>Model</th>
+		<th>Storage</th>
+		<th>Cell Data</th>
+	</tr>
+	<tr>
+		<td>$329</td>
+		<td>iPad mini</td>
+		<td>16 GB</td>
+		<td>None</td>
+	</tr>
+	<tr>
+		<td>$399</td>
+		<td>iPad 2</td>
+		<td>16 GB</td>
+		<td>None</td>
+	</tr>
+	<tr>
+		<td>$429</td>
+		<td>iPad mini</td>
+		<td>32 GB</td>
+		<td>None</td>
+	</tr>
+	<tr>
+		<td>$459</td>
+		<td>iPad mini</td>
+		<td>16 GB</td>
+		<td>4G</td>
+	</tr>
+	<tr>
+		<td>$499</td>
+		<td>iPad 4</td>
+		<td>16 GB</td>
+		<td>None</td>
+	</tr>
+	<tr>
+		<td>$529</td>
+		<td>iPad mini</td>
+		<td>64 GB</td>
+		<td>None</td>
+	</tr>
+	<tr>
+		<td>$529</td>
+		<td>iPad 2</td>
+		<td>16 GB</td>
+		<td>3G</td>
+	</tr>
+	<tr>
+		<td>$559</td>
+		<td>iPad mini</td>
+		<td>32 GB</td>
+		<td>4G</td>
+	</tr>
+	<tr>
+		<td>$599</td>
+		<td>iPad 4</td>
+		<td>32 GB</td>
+		<td>None</td>
+	</tr>
+	<tr>
+		<td>$629</td>
+		<td>iPad 4</td>
+		<td>16 GB</td>
+		<td>4G</td>
+	</tr>
+	<tr>
+		<td>$659</td>
+		<td>iPad mini</td>
+		<td>64 GB</td>
+		<td>4G</td>
+	</tr>
+	<tr>
+		<td>$699</td>
+		<td>iPad 4</td>
+		<td>64 GB</td>
+		<td>None</td>
+	</tr>
+	<tr>
+		<td>$729</td>
+		<td>iPad 4</td>
+		<td>32 GB</td>
+		<td>4G</td>
+	</tr>
+	<tr>
+		<td>$829</td>
+		<td>iPad 4</td>
+		<td>64 GB</td>
+		<td>4G</td>
+	</tr>
+</table>
+
+While there are some overarching rules (e.g. if you want more space, or you want 4G data, you're paying more), there's no consistency when you move up or down by one price point. If you were thinking of spending an extra $30, you suddenly have a lot more variables to consider. Perhaps Apple did this to maybe get a few extra dollars out of the customer, but my hunch is that it'll have the opposite effect. Say you walk into the Apple Store to buy a base model iPad 4 at $499. If you wanted to spend a little more, you could get a slower iPad with 3G, or a smaller iPad with a lot of space you don't know if you need. On the other hand you could get the iPad mini with the exact same storage, a smaller screen, and 4G data, all while walking out of the store with $40 in your pocket. It's not a hard conclusion to draw.
+
+In the end, Apple will sell a zillion of them, and they'll work fine. In a year, Apple will announce the next iPad mini, which will probably include a Retina display, a more modern chipset, and probably a price drop to $299 as well. It just feels like they're holding some of that stuff back from this version, and it doesn't seem like price is the motivating factor.
+
+Personally I'm waiting to get one until I actually hold it and try to fit it into my large-but-not-iPad-large jacket pocket. The true test of a device like the iPad mini is its portability. The Nexus 7 fits my jacket, but barely. Hopefully the iPad mini fits as well.
