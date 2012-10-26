@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Letterpress Review"
-date: 2012-10-24 09:00
+date: 2012-10-25 09:00
 comments: false
 categories: 
 ---
