@@ -6,7 +6,7 @@ comments: false
 categories: 
 ---
 
-About a week ago, Loren Brichter [teased](http://www.atebits.com/news/atebits-2-0/) a new game that was about to be released. Wednesday, it went live as [Letterpress](http://www.atebits.com/letterpress/), an unique and easy-to-learn multiplayer word game. It uses Game Center's turn-based system (similar to what plus+ and OpenFeint had before it) to save and push game state between players, whether the other person has the game open or not. It has a very clean, simple visual style not unlique Microsoft's Metro with a twist of aesthetic of the old Mac's System 7 - simple colors, squares, circles, lines, and clean typography. It looks and works great.
+About a week ago, Loren Brichter [teased](http://www.atebits.com/news/atebits-2-0/) a new game that was about to be released. Wednesday, it went live as [Letterpress](http://www.atebits.com/letterpress/), an unique and easy-to-learn multiplayer word game. It uses Game Center's turn-based system (similar to what plus+ and OpenFeint had before it) to save and push game state between players, whether the other person has the game open or not. It has a very clean, simple visual style not unlike Microsoft's Metro with a twist of aesthetic of the old Mac's System 7 - simple colors, squares, circles, lines, and clean typography. It looks and works great.
 
 The game itself is very well designed. You make words from any of the 25 tiles on the board. Playing a word turns all the tiles to your color. Surrounding a tile you own with one on each of the four sides "shields" it such that it can't be taken until one of the surrounding tiles is taken. Any letter can be played in any turn. Whoever has the most tiles when they're all captured is the winner.
 
