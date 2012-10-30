@@ -32,7 +32,7 @@ Once you have this in place, run `pod install`. This command will:
 - create an `xcconfig`file that includes header paths for all dependencies
 - change your `xcodeproj` to use the `xcconfig` file for header and linker paths
 - add the `libPods.a` library to the Link Bundle With Libraries phase of your 'xcodeproj'
-- add a new Copy Pods Resources script phase to copy any resources to your bundle
+- add a new Copy Pods Resources script phase to copy any resources to your bundle
 
 Once this is in place, you can build and run. Unless there are any problems with the dependencies, Xcode will compile all the dependencies and link them into your app. It's very important that you use the `xcworkspace`, so Xcode knows how to build the Pods project correctly. You can then `#include <AFNetworking/AFNetworking.h>` to begin using the code. That's it!
 
