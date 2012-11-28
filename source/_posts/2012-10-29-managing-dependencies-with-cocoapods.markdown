@@ -24,8 +24,8 @@ pod 'FormatterKit', '1.0.1'
 
 Once you have this in place, run `pod install`. This command will:
 
-- download the `Podfile` for each dependency you list, and those for any subdependencies
-- check the requirements for each `Podfile` to ensure that your project meets the minimum requirements (so a Mac project won't be added to an iOS app, or a project that only works on iOS 6 will not work on iOS 5)
+- download the `podspec` (a manifest listing instructions on the project's requirements and build instructions) for each dependency you list, and those for any subdependencies
+- check the requirements for each `podspec` to ensure that your project meets the minimum requirements (so a Mac project won't be added to an iOS app, or a project that only works on iOS 6 will not work on iOS 5)
 - set up a new `xcodeproj` with a static library target for all the source files in the dependency tree
 - set up an `xcworkspace` if you don't already have one
 - add the Pods `xcodeproj` to this new `xcworkspace`
