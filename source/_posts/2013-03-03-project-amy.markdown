@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Project Amy"
+date: 2013-03-03 10:31
+comments: false
+categories: projects
+---
+
+At the last App.net hackathon, I unveiled [Apparchy](http://informalprotocol.com/2012/10/apparchy/), a proxy server that converts your App.net timelines into data that looks like the Twitter API, which you could then connect to via Twitter's official iOS apps to post and view to and from App.net. This was a really cool hack, but it suffered from many problems. It relied on a proxy server, which had issues relating to security and privacy, as well as being a single point of failure. If the proxy server went down, everyone's app broke. Apparchy itself was built to work with Twitter's official apps, which use a LOT of private methods on Twitter's server API, and those private APIs changed often from release to release, meaning the app would break if you updated it. It was a big pain to set up, taking many steps that were easy to get wrong. But perhaps the most important and the most philosophical problem that plagued Apparchy was that the early adopter audience of App.net were not the kind of people who embraced Twitter's official apps. They used Tweetbot or Twitterrific or some other app because it was better suited for their needs or looked better or some other reason. E
+
+Even with all these problems, it was fun and fascinating to make. Going into this weekend's App.net hackathon, I wanted to top it. How? By building something that was just as mindblowingly cool, that also fixed all of those problems.
+
+Since the last hackathon four or five months ago, App.net has been *hustling* on getting new APIs out, having added the [Messaging API](http://blog.app.net/2012/12/13/app-net-messaging-api-now-available/) and the [Files API](http://blog.app.net/2013/01/28/announcing-the-app-net-file-api/), among other things. I've been dreaming for years of a better chat app with first-class, bulletproof file transfer support, and App.net has all the ingredients for a killer implementation. Similarly, for over a year, I've been sitting on the knowledge of the existence of the [IMServicePlugIn framework](http://developer.apple.com/library/mac/#documentation/AppleApplications/Reference/IMServicePluginFrameworkRef/_index.html%23//apple_ref/doc/uid/TP40009478), waiting for an opportunity to use it for something.
+
+And thus, [#ProjectAmy](https://alpha.app.net/projectamy) was born. App.net messaging integrated natively into Messages for the Mac.
+
+Here's how to set it up. If you're running Mountain Lion, [download the Amy installer](https://files.app.net/1/9527/ayQHV7-J5m6iTa5Cb5PvZb0-L7IhgtWi8V2Rau-FcFsIIP5Hx5tarKLVOAkBtIeueq3L23Suod9r2W9hxyTC061y_8ptsBvLKHuVF_G1KtvIldxdCSAbDvryFlbBtXBIV5GDi1nOLSn863vE02lztscT9FnjR6bsvwaw_vJe97LI) and run it. Once it has finished installing, open Messages' Preferences and add an account. A new option for App.net will appear: pick it and enter your username and password for App.net. Add the account and you're done.
+
+The people you follow will be shown in your buddy list. Double clicking one will open a new chat window and start a new private messaging session like you would see on [Omega](https://omega.app.net/). Sending and receiving messages happen very fast, usually within a second. You can drag files into the chat window, and they will upload to your account's App.net file storage and be sent as part of a message. Similarly, if you attach a file elsewhere, it will let you download it directly from Messages - and if that file is an image, including animated GIFs, those images will appear inline like they would with AIM or iMessage. If you subscribe to group chats or [Patter chat rooms](http://patter-app.net/), those will appear as well. It's very nicely integrated.
+
+Project Amy tops what I did with Apparchy. It deeply integrates App.net into a major app. It doesn't rely on a proxy server (or in fact communicate with any API except for App.net), so there's no concerns about privacy and far less issues with stability. It uses 100% public, documented APIs that are exposed, so updates will not break the plugin (in theory). It's super simple to set up; just run the installer and add your account information. And it is an integration in an app used by millions of people, with a wide intersection of the people who use App.net. It fixes all of the problems, makes Messages more useful, and makes App.net more useful.
+
+That said, this initial release is a beta. There are bugs and I'll be working on fixing them over time. But in the last few weeks as I've developed it, it's vastly changed how I use PMs on App.net. I use it a lot more, and respond to people a lot more frequently and much more quickly. I hope every Mac-using App.net user downloads it and installs it.
+
+You can [download the Project Amy beta for free](https://files.app.net/1/9527/ayQHV7-J5m6iTa5Cb5PvZb0-L7IhgtWi8V2Rau-FcFsIIP5Hx5tarKLVOAkBtIeueq3L23Suod9r2W9hxyTC061y_8ptsBvLKHuVF_G1KtvIldxdCSAbDvryFlbBtXBIV5GDi1nOLSn863vE02lztscT9FnjR6bsvwaw_vJe97LI) from my App.net file storage. I hope you like it!
