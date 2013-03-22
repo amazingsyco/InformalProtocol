@@ -16,3 +16,8 @@ group :development do
 end
 
 gem 'sinatra', '~> 1.3.2'
+
+if RUBY_VERSION =~ /1.9/
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
+end
