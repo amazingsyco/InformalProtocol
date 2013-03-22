@@ -33,7 +33,7 @@ What do you do with Bitcoins?
 
 You spend them, of course! An incomplete list of vendors to spend Bitcoin at can be found on the [Bitcoin wiki](https://en.bitcoin.it/wiki/Trade). You can buy all kinds of things with Bitcoins, like food, clothes, services, toys, books, and even [beer](http://www.belgianflavours.com/us/). Many sites will trade by the market value, meaning that they'll sell something for either $20 via PayPal or $20 at market rate in Bitcoin (so if a Bitcoin cost $1, that would cost 20 BTC).
 
-You can also treat Bitcoins as a commodity and do forex (currency) trading. So if you buy 10 Bitcoin at $1 and sell them at $2, you've made a profit of $20. The markets for this tend to fluctuate quite a bit; the month prior to writing this, the value has increased from $30 to peak at $75. But what goes up must come down; in 2011 the USD to BTC exchange rate plummeted from a peak of $33 to $2.51 and took a long time to recover. The volatility means that you could have huge gains, but also catastrophic losses.
+You can also treat Bitcoins as a commodity and do forex (currency) trading. So if you buy 10 Bitcoin at $1 and sell them at $2, you've made a profit of $10. The markets for this tend to fluctuate quite a bit; the month prior to writing this, the value has increased from $30 to peak at $75. But what goes up must come down; in 2011 the USD to BTC exchange rate plummeted from a peak of $33 to $2.51 and took a long time to recover. The volatility means that you could have huge gains, but also catastrophic losses.
 
 Is it safe?
 -
